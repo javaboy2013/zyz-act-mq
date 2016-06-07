@@ -44,6 +44,7 @@ public class ActivemqController {
                 queueSender.send("test.queue", message + new Date().getTime());
             }
             opt = "suc";
+            
         }
         catch (Exception e) {
             opt = e.getCause().toString();
